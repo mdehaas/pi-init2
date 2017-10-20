@@ -1,0 +1,5 @@
+language: go
+env:
+- GIMME_OS=linux GIMME_ARCH=arm
+script:
+- go build -o ogn-init github.com/mdehaas/pi-init2/src/pi-init2
