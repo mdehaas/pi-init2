@@ -2,4 +2,4 @@ language: go
 env:
 - GIMME_OS=linux GIMME_ARCH=arm
 script:
-- go build -o ogn-init github.com/mdehaas/pi-init2/src/pi-init2
+- go build -o pi-init2 github.com/mdehaas/pi-init2/src/pi-init2
