@@ -11,8 +11,8 @@ before_deploy:
 - zip -r pi-init2.zip cmdline.txt boot pi-init2
 deploy:
   provider: releases
-  skip_cleanup: true
+  api_key:
+    secure: kLooM1lFBOcLeqdlPhP037XaGdHLtKbMV0gzaCaVcqoPUtLlHJGPbXbAuGFqYAcEledvX4AndwZWVLwryi/+4/xet/jVL3WHUMx1qxO8csXvPbbasJsr8iI/IQrZ1lW/IqzH/Uefz/yO8kNJ6mU7lle64a11RDAFMaN+37emu85LDiV06q61+cI3wqrFPzZwoGum6mM1BpPRoMJ8sIiZPK5TGzcN3m66DzDCB5g02fUuW8BG0vwDykjLXbJJDk6+sZGDGTcvwPbDONeHWUpE2c49Ht0J7zMEE5ylOnVy5JxCKY7Pf+dydwnnzH8QbGCTdY4tIfFIPxGOxnMbjMQLLlbqbrECrw3Q//O62xsrpIb6p9X1jY9Qfyt8NpWq5JCuJ31lAnxr7b4Vr4gVt73tPQLn7DWc+6SVjvxHLucsl8vJqrZvBjgU0zq4kbH0rfb/hfgrAei/mZeOVbrqG2loNaX+mbAEaClAhB3bW9o7hdG6qvOiU3KJ+NBu2+tF6hzQE0p9X5RrtK7aw0+SpwA3pPnClM9rAqTnzrPbEQad0Wju32p58sFTPVovCM4m8q3vCtEbGbK39+7EJzw55ZXOKXojsA6Y84Xka2w7N3WyxyQGhtD8Rx74/681SV5aN/nUsCyyWAl04rmPATNAh+n5XIsF+irzS32LaE6uPKc69II=
   file: pi-init2.zip
   on:
     repo: mdehaas/pi-init2
-    tags: true
