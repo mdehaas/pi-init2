@@ -9,7 +9,7 @@ script:
 - go build -o pi-init2 github.com/mdehaas/pi-init2/src/pi-init2
 before_deploy:
 - zip -r pi-init2.zip cmdline.txt boot pi-init2
-deploy
+deploy:
   provider: releases
   skip_cleanup: true
   file: pi-init2.zip
